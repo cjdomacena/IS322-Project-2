@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import TodoCard from "../component/TodoCard";
-
+import Tabs from "../component/Tabs";
+import Board from "../component/BoardView";
+import ListView from "../component/ListView";
 function Main(props)
 {
 	const { todos } = useSelector(state => state.todo);
@@ -11,6 +12,7 @@ function Main(props)
 	const [todosInProgress, setTodosInProgress] = useState(null)
 
 	const [todosDone, setTodosDone] = useState(null)
+	const [view, setView] = useState("board");
 
 	useEffect(() =>
 	{
@@ -23,40 +25,16 @@ function Main(props)
 	if (props.view === "board")
 	{
 		return (
-			<main className="grid grid-cols-3 container mx-auto h-full space-x-12 text-white mt-12 ">
-				<section>
-					<h2>Pending</h2>
-					<div className="overflow-y-scroll h-[calc(100vh-180px)] space-y-4 mt-4 pr-4">
-						{todosPending && todosPending.map(todo => <TodoCard key={todo.id} todo={todo} />)}
-					</div>
-				</section>
-				<section>
-					<h2>In Progress</h2>
-					<div className="overflow-y-scroll h-[calc(100vh-180px)] space-y-4 mt-4 pr-4">
-						{todosInProgress && todosInProgress.map(todo => <TodoCard key={todo.id} todo={todo} />)}
-					</div>
-				</section>
-				<section>
-					<h2>Done</h2>
-					<div className="overflow-y-scroll h-[calc(100vh-180px)] space-y-4 mt-4 pr-4">
-						{todosDone && todosDone.map(todo => <TodoCard key={todo.id} todo={todo} />)}
-					</div>
-				</section>
-			</main>)
+			<div className="container mx-auto mt-8">
+				<div className="flex items-center justify-between p-4">
+					<h1 className="text-white text-xl font-bold">My Todos</h1>
+					<Tabs view={view} setView={setView} />
+				</div>
+				<div className="transition-all">
+					{view === "board" ? <Board pending={todosPending} inProgress={todosInProgress} done={todosDone} /> : <ListView todos={todos} />}
+				</div>
+			</div>)
 	}
-	return (
-		<main>
-			<section>
-				<h2>Pending</h2>
-			</section>
-			<section>
-				<h2>In Progress</h2>
-			</section>
-			<section>
-				<h2>Done</h2>
-			</section>
-		</main>)
-
 }
 
 export default Main;

@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import getTodos from "./api/getTodos"
 import Navbar from "./component/Navbar";
+import Tabs from "./component/Tabs";
 import Main from "./layout/Main";
 function App()
 {
