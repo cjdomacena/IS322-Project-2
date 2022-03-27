@@ -26,8 +26,8 @@ function Main(props)
 	{
 		return (
 			<div className="container mx-auto mt-8">
-				<div className="flex items-center justify-between p-4">
-					<div>
+				<div className="flex items-center justify-between rounded bg-slate-800">
+					<div className="p-4">
 						<h1 className="text-white text-xl font-bold">My Todos</h1>
 					</div>
 					<Tabs view={view} setView={setView} />

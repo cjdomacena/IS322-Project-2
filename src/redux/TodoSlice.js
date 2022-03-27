@@ -22,9 +22,13 @@ export const todoSlice = createSlice({
 			state.isDone = true;
 			state.isLoading = false;
 			state.isError = false;
+		},
+		addTodo: (state, action) => {
+			const temp = {...action.payload, "id": state.todos.length + 1, "status": "pending"}
+			state.todos = [...state.todos, temp]
 		}
 	}
 })
 
-export const {getTodoStart, getTodoSuccess, getTodoError} = todoSlice.actions;
+export const { getTodoStart, getTodoSuccess, getTodoError, addTodo} = todoSlice.actions;
 export default todoSlice.reducer
