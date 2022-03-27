@@ -3,47 +3,57 @@
 {
 	"id": 1,
 	"title": "delectus aut autem",
-	"status": "done"
+	"status": "done",
+	"type": "feature"
 },
 {
 	"id": 2,
 	"title": "quis ut nam facilis et officia qui",
-	"status": "done"
+	"status": "done",
+	"type": "bug"
+	
 },
 {
 	"id": 3,
 	"title": "fugiat veniam minus",
-	"status": "in progress"
+	"status": "in progress",
+	"type": "bug"
 },
 {
 	"id": 4,
 	"title": "et porro tempora",
-	"status": "pending"
+	"status": "pending",
+	"type": "issue"
 },
 {
 	"id": 5,
 	"title": "laboriosam mollitia et enim quasi adipisci quia provident illum",
-	"status": "in progress"
+	"status": "in progress",
+	"type": "feature"
 },
 {
 	"id": 6,
 	"title": "qui ullam ratione quibusdam voluptatem quia omnis",
-	"status": "in progress"
+	"status": "in progress",
+	"type": "issue"
 },
 {
 	"id": 7,
 	"title": "illo expedita consequatur quia in",
-	"status": "in progress"
+	"status": "in progress",
+	"type": "feature"
 },
 {
 	"id": 8,
 	"title": "quo adipisci enim quam ut ab",
-	"status": "pending"
+	"status": "pending",
+	"type": "bug"
 },
 {
 	"id": 9,
 	"title": "molestiae perspiciatis ipsa",
-	"status": "in progress"
+	"status": "in progress",
+	"type": "feature"
 }
 	]
 }

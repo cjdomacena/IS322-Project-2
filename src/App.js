@@ -1,12 +1,12 @@
 import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { Route, Routes } from "react-router-dom";
 import getTodos from "./api/getTodos"
+import AddTodo from "./pages/AddTodo";
 import Navbar from "./component/Navbar";
-import Tabs from "./component/Tabs";
-import Main from "./layout/Main";
+import Main from "./pages/Main";
 function App()
 {
-  const { todos, isError, isLoading } = useSelector((state) => state.todo)
   const dispatch = useDispatch()
   useEffect(() =>
   {
@@ -16,7 +16,10 @@ function App()
   return (
     <div className="App">
       <Navbar />
-      <Main view="board" />
+      <Routes>
+        <Route path="/" element={<Main view="board" />}/>
+        <Route path="/addTodo" element={<AddTodo />}/>
+      </Routes>
     </div>
   );
 }

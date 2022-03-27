@@ -54,7 +54,6 @@ function ListView({ todos })
 				<button className="px-6 py-2 bg-slate-600 rounded-sm hover:bg-slate-700 transition-colors" onClick={() => setFilteredTodos([...todos])}>Reset</button>
 			</div>
 			<section className="w-full mx-auto">
-				{console.log(filteredTodos)}
 				{filteredTodos && filteredTodos.map(todo => <TodoCard key={todo.id} todo={todo} />)}
 			</section>
 		</main>
