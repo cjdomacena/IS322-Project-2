@@ -57,26 +57,26 @@
 		{
 			"id": 10,
 			"title": "molestiae perspiciatis ipsa",
-			"status": "in progress",
-			"type": "review"
+			"status": "review",
+			"type": "feature"
 		},
 		{
 			"id": 11,
 			"title": "molestiae perspiciatis ipsa",
-			"status": "in progress",
+			"status": "done",
 			"type": "feature"
 		},
 		{
 			"id": 12,
 			"title": "molestiae perspiciatis ipsa",
 			"status": "in progress",
-			"type": "review"
+			"type": "issue"
 		},
 		{
 			"id": 13,
 			"title": "molestiae perspiciatis ipsa",
-			"status": "in progress",
-			"type": "feature"
+			"status": "review",
+			"type": "bug"
 		}
 	]
 }
