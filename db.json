@@ -57,8 +57,8 @@
 		{
 			"id": 10,
 			"title": "molestiae perspiciatis ipsa",
-			"status": "in progress",
-			"type": "review"
+			"status": "review",
+			"type": "feature"
 		},
 		{
 			"id": 11,
