@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { addTodo } from "../redux/TodoSlice";
+import {ToastContainer, toast} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 function AddTodo()
 {
@@ -11,13 +13,16 @@ function AddTodo()
 	const navigate = useNavigate()
 	function handleSubmit(e)
 	{
+		const notify = () => toast.success("Todo successfully added!", {autoClose: 3000, pauseOnHover:false})
 		e.preventDefault();
 		dispatch(addTodo({ "title": title, "type": todoType }))
 		setTitle("")
+		notify();
 	}
 
 	return (
 		<div className="container mx-auto mt-8 p-4 flex justify-center rounded-sm">
+			<ToastContainer theme="dark" />
 			<form className="w-96 h-auto border border-slate-800 rounded-sm" onSubmit={(e) => handleSubmit(e)}>
 				<div className="p-4 bg-slate-700 text-white" >
 					<h1>Add Todo</h1>

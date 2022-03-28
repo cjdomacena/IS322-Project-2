@@ -5,25 +5,25 @@ function Board ({pending, inProgress, done,review}) {
 			<section className="w-full mx-auto">
 				<h2 className="text-lg font-bold">Pending</h2>
 				<div className="overflow-y-auto space-y-4 mt-4 pr-4 rounded-sm">
-					{pending && pending.map(todo => <TodoCard key={todo.id} todo={todo} />)}
+					{pending && pending.map(todo => <TodoCard key={todo.id} todo={todo} view="board" />)}
 				</div>
 			</section>
 			<section className="w-full mx-auto">
 				<h2 className="text-lg font-bold">In Progress</h2>
 				<div className="overflow-y-auto space-y-4 mt-4 pr-4 rounded-sm">
-					{inProgress && inProgress.map(todo => <TodoCard key={todo.id} todo={todo} />)}
+					{inProgress && inProgress.map(todo => <TodoCard key={todo.id} todo={todo} view="board"/>)}
 				</div>
 			</section>
 			<section className="w-full mx-auto">
 				<h2 className="text-lg font-bold">Review</h2>
 				<div className="overflow-y-auto space-y-4 mt-4 pr-4 rounded-sm">
-					{review && review.map(todo => <TodoCard key={todo.id} todo={todo} />)}
+					{review && review.map(todo => <TodoCard key={todo.id} todo={todo} view="board" />)}
 				</div>
 			</section>
 			<section className="w-full mx-auto">
 				<h2 className="text-lg font-bold">Done</h2>
 				<div className="overflow-y-auto space-y-4 mt-4 pr-4 rounded-sm">
-					{done && done.map(todo => <TodoCard key={todo.id} todo={todo} />)}
+					{done && done.map(todo => <TodoCard key={todo.id} todo={todo} view="board" />)}
 				</div>
 			</section>
 		</main>

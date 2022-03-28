@@ -68,6 +68,7 @@ function ListView({ todos })
 						<option value="default">Filter by Status</option>
 						<option value="pending">Pending</option>
 						<option value="in progress">In Progress</option>
+						<option value="review">Review</option>
 						<option value="done">Done</option>
 					</select>
 				</div>
