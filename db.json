@@ -2,79 +2,79 @@
 	"todos": [
 		{
 			"id": 1,
-			"title": "delectus aut autem",
+			"title": "Create Grid View",
 			"status": "done",
 			"type": "feature"
 		},
 		{
 			"id": 2,
-			"title": "quis ut nam facilis et officia qui",
+			"title": "JSON no response",
 			"status": "done",
 			"type": "bug"
 		},
 		{
 			"id": 3,
-			"title": "fugiat veniam minus",
+			"title": "Adding task",
 			"status": "in progress",
 			"type": "bug"
 		},
 		{
 			"id": 4,
-			"title": "et porro tempora",
+			"title": "App crashes",
 			"status": "pending",
 			"type": "issue"
 		},
 		{
 			"id": 5,
-			"title": "laboriosam mollitia et enim quasi adipisci quia provident illum",
+			"title": "Create List view",
 			"status": "in progress",
 			"type": "feature"
 		},
 		{
 			"id": 6,
-			"title": "qui ullam ratione quibusdam voluptatem quia omnis",
+			"title": "Site on mobile looks bad",
 			"status": "in progress",
 			"type": "issue"
 		},
 		{
 			"id": 7,
-			"title": "illo expedita consequatur quia in",
+			"title": "Add Form",
 			"status": "in progress",
 			"type": "feature"
 		},
 		{
 			"id": 8,
-			"title": "quo adipisci enim quam ut ab",
+			"title": "Page does not re-render on state change",
 			"status": "pending",
 			"type": "bug"
 		},
 		{
 			"id": 9,
-			"title": "molestiae perspiciatis ipsa",
+			"title": "Create Navbar",
 			"status": "in progress",
 			"type": "feature"
 		},
 		{
 			"id": 10,
-			"title": "molestiae perspiciatis ipsa",
+			"title": "Form submission",
 			"status": "review",
 			"type": "feature"
 		},
 		{
 			"id": 11,
-			"title": "molestiae perspiciatis ipsa",
+			"title": "Create Footer",
 			"status": "done",
 			"type": "feature"
 		},
 		{
 			"id": 12,
-			"title": "molestiae perspiciatis ipsa",
+			"title": "JSON data failed to load",
 			"status": "in progress",
 			"type": "issue"
 		},
 		{
 			"id": 13,
-			"title": "molestiae perspiciatis ipsa",
+			"title": "Wrong API Base URL",
 			"status": "review",
 			"type": "bug"
 		}
