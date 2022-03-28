@@ -17,8 +17,8 @@ function App()
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Main view="board" />}/>
-        <Route path="/addTodo" element={<AddTodo />}/>
+        <Route path="IS322-Project-2/" element={<Main view="board" />}/>
+        <Route path="IS322-Project-2/addTodo" element={<AddTodo />}/>
       </Routes>
     </div>
   );
