@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { addTodo } from "../redux/TodoSlice";
 
 function AddTodo()
@@ -7,6 +8,7 @@ function AddTodo()
 	const [title, setTitle] = useState("");
 	const [todoType, setTodoType] = useState("feature");
 	const dispatch = useDispatch();
+	const navigate = useNavigate()
 	function handleSubmit(e)
 	{
 		e.preventDefault();
@@ -35,7 +37,7 @@ function AddTodo()
 				</div>
 				<div className="p-4 space-x-4 flex">
 					<button className="w-full py-2 bg-blue-700 text-white" type="submit">Submit</button>
-					<button className="w-full py-2 bg-gray-700 text-white" type="reset">Reset</button>
+					<button className="w-full py-2 bg-gray-700 text-white" type="button" onClick={() => navigate("/")}>Cancel</button>
 				</div>
 			</form>
 		</div>)

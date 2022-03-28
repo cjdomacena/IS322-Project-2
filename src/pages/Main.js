@@ -11,6 +11,8 @@ function Main(props)
 
 	const [todosInProgress, setTodosInProgress] = useState(null)
 
+	const [todosReview, setTodosReview] = useState(null)
+
 	const [todosDone, setTodosDone] = useState(null)
 	const [view, setView] = useState("board");
 
@@ -18,7 +20,8 @@ function Main(props)
 	{
 		setTodosPending(todos.filter(todo => todo.status === "pending"));
 		setTodosInProgress(todos.filter(todo => todo.status === "in progress"));
-		setTodosDone(todos.filter(todo => todo.status === "done"))
+		setTodosDone(todos.filter(todo => todo.status === "done"));
+		setTodosReview(todos.filter(todo => todo.status === "review"))
 	}, [todos])
 
 
@@ -33,7 +36,7 @@ function Main(props)
 					<Tabs view={view} setView={setView} />
 				</div>
 				<div className="transition-all">
-					{view === "board" ? <Board pending={todosPending} inProgress={todosInProgress} done={todosDone} /> : <ListView todos={todos} />}
+					{view === "board" ? <Board pending={todosPending} inProgress={todosInProgress} review={todosReview} done={todosDone} /> : <ListView todos={todos} />}
 				</div>
 			</div>)
 	}

@@ -1,4 +1,4 @@
-function TodoCard({ todo, isBoard })
+function TodoCard({ todo })
 {
 
 	function getColor()
@@ -8,11 +8,13 @@ function TodoCard({ todo, isBoard })
 			case "pending":
 				return "bg-cyan-600";
 			case "in progress":
-				return "bg-yellow-600"
+				return "bg-yellow-600";
 			case "done":
-				return "bg-emerald-600"
+				return "bg-emerald-600";
+			case "review": 
+				return "bg-violet-600";
 			default:
-				return "bg-white"
+				return "bg-white";
 		}
 	}
 
