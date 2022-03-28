@@ -42,7 +42,7 @@ function AddTodo()
 				</div>
 				<div className="p-4 space-x-4 flex">
 					<button className="w-full py-2 bg-blue-700 text-white" type="submit">Submit</button>
-					<button className="w-full py-2 bg-gray-700 text-white" type="button" onClick={() => navigate("/")}>Cancel</button>
+					<button className="w-full py-2 bg-gray-700 text-white" type="button" onClick={() => navigate("IS322-Project-2/")}>Cancel</button>
 				</div>
 			</form>
 		</div>)
