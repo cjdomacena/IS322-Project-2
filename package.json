@@ -1,7 +1,7 @@
 {
   "name": "project2",
   "version": "0.1.0",
-  "homepage": "https://cjdomacena.github.io/IS322-Project-2/",
+  "homepage": "https://cjdomacena.github.io/IS322-Project-2",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.0",
